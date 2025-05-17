@@ -1,0 +1,99 @@
+// Global styles and variables
+:root {
+  --primary-color: #c17a50;
+  --secondary-color: #333;
+  --text-color: #333;
+  --light-text: #fff;
+  --bg-color: #fff;
+  --dark-bg: #1a1a1a;
+  --gray-bg: #f5f5f5;
+  --font-main: 'Poppins', sans-serif;
+  --font-heading: 'Playfair Display', serif;
+  --shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+  --transition: all 0.3s ease;
+}
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+html {
+  scroll-behavior: smooth;
+}
+
+body {
+  font-family: var(--font-main);
+  color: var(--text-color);
+  line-height: 1.6;
+  overflow-x: hidden;
+}
+
+.container {
+  width: 100%;
+  max-width: 1200px;
+  margin: 0 auto;
+  padding: 0 20px;
+}
+
+h1, h2, h3, h4 {
+  font-family: var(--font-heading);
+  margin-bottom: 1rem;
+  line-height: 1.3;
+}
+
+h1 {
+  font-size: 3.5rem;
+}
+
+h2 {
+  font-size: 2.5rem;
+  text-align: center;
+  margin-bottom: 1.5rem;
+}
+
+h3 {
+  font-size: 1.5rem;
+}
+
+p {
+  margin-bottom: 1rem;
+}
+
+a {
+  text-decoration: none;
+  color: inherit;
+  transition: var(--transition);
+}
+
+button {
+  cursor: pointer;
+  font-family: var(--font-main);
+  transition: var(--transition);
+}
+
+section {
+  padding: 5rem 0;
+}
+
+.section-subtitle {
+  text-align: center;
+  margin-bottom: 3rem;
+  font-size: 1.1rem;
+  color: #777;
+}
+
+// Import Google Fonts
+@import url('https://fonts.googleapis.com/css2?family=Playfair+Display:wght@400;500;600;700&family=Poppins:wght@300;400;500;600&display=swap');
+
+// Import component styles
+@import url('./components/Header.scss');
+@import url('./components/Hero.scss');
+@import url('./components/Services.scss');
+@import url('./components/About.scss');
+@import url('./components/Gallery.scss');
+@import url('./components/Testimonials.scss');
+@import url('./components/CTABanner.scss');
+@import url('./components/Contact.scss');
+@import url('./components/Footer.scss');
